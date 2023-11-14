@@ -10,7 +10,7 @@ These Python scripts will help you unsubscribing from newsletters whose **unsubs
 
 `python_delete_and_unsub_script.py` makes you both unsubscribe from newsletters and delete e-mails.
 
-## How to use it
+## How to use them
 
 In short:
 
