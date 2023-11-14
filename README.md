@@ -1,6 +1,6 @@
 # Python scripts to delete (IMAP) e-mails and/or unsubscribe from every newsletter
 
-These Python scripts will help you unsubscribing from newsletters whose **unsubscribe link** is in the message of the chosen e-mail, as well as deleting e-mails.
+These Python scripts will help you to unsubscribe from newsletters whose **unsubscribe link** is in the message of the chosen e-mail, as well as deleting e-mails.
 
 **_NOTE_** _The scripts work only with the IMAP protocol!_
 
