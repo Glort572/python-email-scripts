@@ -23,7 +23,7 @@ ___Note:__ the date must be in `DD-MM-YYYY` format and in quotes inside of the s
 Here is a [list](https://www.rfc-editor.org/rfc/rfc3501#section-6.4.4) of available criteria for the last two cases (pages 49 to 54).
 
 ## Optional
-If you're a mathematician or a maths lover, you surely heard of **(De Morgan's Laws)[https://en.wikipedia.org/wiki/De_Morgan%27s_laws]**. Funnily enough, you can use these laws to understand the way you can choose multiple e-mail addresses that you want to be ignored e.g.
+If you're a mathematician or a maths lover, you surely heard of **[De Morgan's Laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)**. Funnily enough, you can use these laws to understand the way you can choose multiple e-mail addresses that you want to be ignored e.g.
 
 `NOT OR FROM user_1@provider.domain FROM user_2@provider.domain` to say that you want to ignore the users number 1 and number 2.
 
