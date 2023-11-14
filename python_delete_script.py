@@ -32,7 +32,7 @@ for mail in messages:
             subject = decode_header(msg["Subject"])[0][0]
             if isinstance(subject, bytes):
                 # if it's a bytes type, decode to str
-                subject = subject.decode('latin-1')
+                subject = subject.decode('latin-1') # default is 'utf-8'
             print("Deleting", subject)
     # mark the mail as deleted
     imap.store(mail, "+FLAGS", "\\Deleted")
