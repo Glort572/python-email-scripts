@@ -21,7 +21,7 @@ Here is a [list](https://www.rfc-editor.org/rfc/rfc3501#section-6.4.4) of availa
 
 ## Optional
 
-If you're a mathematician or a maths lover, you may be familiar with **[De Morgan's Laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)**. Interestingly, you can use these laws to understand how to choose multiple e-mail addresses to be ignored, e.g.,
+If you're a mathematician or are keen on maths, you may be familiar with **[De Morgan's Laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)**. Interestingly, you can use these laws to understand how to choose multiple e-mail addresses to be ignored, e.g.,
 
 ```plaintext
 NOT OR FROM user_1@provider.domain FROM user_2@provider.domain
