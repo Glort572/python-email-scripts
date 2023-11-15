@@ -6,7 +6,7 @@ These Python scripts are designed to help you unsubscribe from newsletters conta
 
 - `python_unsub_script.py` allows you to unsubscribe from newsletters.
 - `python_delete_script.py` allows you to delete e-mails.
-- `python_delete_and_unsub_script.py` allows you to both unsubscribe from newsletters and delete e-mails.
+- `python_delete_and_unsub_script.py` **(currently not working)** allows you to both unsubscribe from newsletters and delete e-mails.
 
 ## How to Use
 
