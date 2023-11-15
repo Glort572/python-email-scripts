@@ -1,33 +1,37 @@
 # Python scripts to delete (IMAP) e-mails and/or unsubscribe from every newsletter
 
-These Python scripts will help you to unsubscribe from newsletters whose **unsubscribe link** is in the message of the chosen e-mail, as well as deleting e-mails.
+These Python scripts are designed to help you unsubscribe from newsletters containing an **unsubscribe link** in the e-mail message, as well as delete e-mails.
 
-**_NOTE_** _The scripts work only with the IMAP protocol!_
+**_Note:_** _These scripts only work with the IMAP protocol!_
 
-`python_unsub_script.py` makes you simply unsubscribe from newsletters.
+- `python_unsub_script.py` allows you to unsubscribe from newsletters.
+- `python_delete_script.py` allows you to delete e-mails.
+- `python_delete_and_unsub_script.py` allows you to both unsubscribe from newsletters and delete e-mails.
 
-`python_delete_script.py` makes you delete e-mails.
+## How to Use
 
-`python_delete_and_unsub_script.py` makes you both unsubscribe from newsletters and delete e-mails.
+In brief:
 
-## How to use them
-
-In short:
-
-- You will have to enter your e-mail username and a password you have to create [here](https://support.google.com/accounts/answer/185833?hl=en&sjid=11205608307902457777-EU).
-- `imap.select()` makes you select a folder. Leave it as `imap.select('INBOX')` if you need to perform the operation on the inbox folder. If you want to perform it on another folder, replace `'INBOX'` with something like `'[Gmail]/<folder name>'`.
-- To edit the addresses which you want to consider or ignore, go to `imap.search()` and replace or add the criterium/-a and the e-mail addresses.
-- To edit the date, do the same as in the case above, although you must keep in mind that you're editing not the e-mail addresses but the date.
-___Note:__ the date must be in `DD-MM-YYYY` format and in quotes inside of the string._
+1. Enter your e-mail username and a password that you create [here](https://support.google.com/accounts/answer/185833?hl=en&sjid=11205608307902457777-EU).
+2. Use `imap.select()` to choose a folder. Leave it as `imap.select('INBOX')` for the inbox folder. To perform operations on another folder, replace `'INBOX'` with something like `'[Gmail]/<folder name>'`.
+3. Edit the addresses you want to consider or ignore in `imap.search()` by replacing or adding criteria and e-mail addresses.
+4. To edit the date, follow the same steps as above, keeping in mind that you're modifying the date, not the e-mail addresses. The date must be in `DD-MM-YYYY` format and enclosed in quotes within the string.
 
 Here is a [list](https://www.rfc-editor.org/rfc/rfc3501#section-6.4.4) of available criteria for the last two cases (pages 49 to 54).
 
 ## Optional
-If you're a mathematician or a maths lover, you surely heard of **[De Morgan's Laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)**. Funnily enough, you can use these laws to understand the way you can choose multiple e-mail addresses that you want to be ignored e.g.
 
-`NOT OR FROM user_1@provider.domain FROM user_2@provider.domain` to say that you want to ignore the users number 1 and number 2.
+If you're a mathematician or a maths lover, you may be familiar with **[De Morgan's Laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)**. Interestingly, you can use these laws to understand how to choose multiple e-mail addresses to be ignored, e.g.,
 
-`not (A or B) == (not A) and (not B)`
+```plaintext
+NOT OR FROM user_1@provider.domain FROM user_2@provider.domain
+```
+This means you want to ignore users number 1 and number 2.
 
-If you think that I missed something or want to give me some tips, open an issue or contact me via e-mail at glort572@outlook.it .
+```plaintext
+not (A or B) == (not A) and (not B)
+```
+
+If you think I missed something or want to provide tips, open an issue or contact me via e-mail at glort572@outlook.it .
+
 Happy coding!
