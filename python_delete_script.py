@@ -7,7 +7,7 @@ username = input('Enter your Email-ID: ')
 password = input('Enter your Password: ')
 
 # create an IMAP4 class with SSL 
-imap = imaplib.IMAP4_SSL("imap.gmail.com")
+imap = imaplib.IMAP4_SSL("imap.gmail.com") # for Office 365 "IMAP_SERVER = 'outlook.office365.com'" and for Outlook "IMAP_SERVER = 'imap-mail.outlook.com'"
 # authenticate
 imap.login(username, password)
 
