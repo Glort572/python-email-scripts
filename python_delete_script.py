@@ -34,12 +34,14 @@ for mail in messages:
                 # if it's a bytes type, decode to str
                 subject = subject.decode('latin-1') # default is 'utf-8'
             print("Deleting", subject)
-    # mark the mail as deleted
-    imap.store(mail, "+FLAGS", "\\Deleted")
+        # mark the mail as deleted
+        # imap.store(mail, "+FLAGS", "\\Deleted") # comment the uncommented line below and uncomment this one along with "client.expunge()" to permanently delete the e-mails
+        # mark the mail as moved to Trash
+        imap.store(mail, '+X-GM-LABELS', '(\Trash)')
 
 # permanently remove mails that are marked as deleted
 # from the selected mailbox (in this case, INBOX)
-imap.expunge()
+# imap.expunge()
 # close the mailbox
 imap.close()
 # logout from the account
