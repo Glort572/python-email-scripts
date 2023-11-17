@@ -8,7 +8,7 @@ from email.header import decode_header
 # Others, please look up the documentation....
 # Or let me know in the comment section to make another video :)
 imaplib._MAXLINE = 10000000
-IMAP_SERVER = 'imap.gmail.com'
+IMAP_SERVER = 'imap.gmail.com' # for Office 365 "IMAP_SERVER = 'outlook.office365.com'" and for Outlook "IMAP_SERVER = 'imap-mail.outlook.com'"
 IMAP_PORT ='993'
 
 client = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)
