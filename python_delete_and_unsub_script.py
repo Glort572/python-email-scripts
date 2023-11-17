@@ -73,11 +73,14 @@ if input() == 'y':
                     subject = subject.decode('latin-1')
                 print("Deleting", subject)
         # mark the mail as deleted
-        client.store(mail, "+FLAGS", "\\Deleted")
+        # client.store(mail, "+FLAGS", "\\Deleted") # comment the uncommented line below and uncomment this one along with "client.expunge()" to permanently delete the e-mails
+        # mark the mail as moved to Trash
+        client.store(mail, '+X-GM-LABELS', '(\Trash)')
+
 
 # permanently remove mails that are marked as deleted
 # from the selected mailbox (in this case, INBOX)
-client.expunge()
+# client.expunge()
 # close the mailbox
 client.close()
 # logout from the account
